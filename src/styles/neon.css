@@ -16,6 +16,18 @@
   }
 }
 
+@keyframes gridPulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
 .neon-text {
   color: #fff;
   animation: neonTextPulse 1.5s ease-in-out infinite alternate;
@@ -29,4 +41,12 @@
 .neon-bg {
   background: rgba(0, 255, 255, 0.1);
   backdrop-filter: blur(10px);
+}
+
+.cyber-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  animation: gridPulse 4s ease-in-out infinite;
 }

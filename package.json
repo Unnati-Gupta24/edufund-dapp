@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
-   "dependencies": {
+  "dependencies": {
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -17,9 +17,12 @@
     "@react-three/fiber": "^8.15.19",
     "@react-three/drei": "^9.102.3",
     "ethers": "^6.11.1",
-    "web3": "^4.5.0",
     "react-router-dom": "^6.22.3",
-    "@coinbase/wallet-sdk": "^3.7.2"
+    "react-hot-toast": "^2.4.1",
+    "zustand": "^4.5.2",
+    "@web3modal/wagmi": "^3.5.6",
+    "viem": "^1.21.4",
+    "wagmi": "^1.4.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
